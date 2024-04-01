@@ -1,8 +1,8 @@
 package task1;
 
-public class Just {
-    // Метод для розрахунку площі прямокутника
-    public static float Calculate(int length, int width) {
-        return (float) (length * width);
+public class AreaCircle {
+    // Метод для розрахунку площі кола
+    public static double calculate(double radius) {
+        return Math.PI * radius * radius;
     }
 }
