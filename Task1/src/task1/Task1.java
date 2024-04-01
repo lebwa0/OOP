@@ -1,13 +1,12 @@
 package task1;
 
-public class Task1 {
+public class Task1Circle {
 
     public static void main(String[] args) {
-        // Задаємо розміри прямокутника
-        int length = 15;
-        int width = 20;
+        // Задаємо радіус кола
+        double radius = 5.0;
         
-        // Виводимо площу прямокутника
-        System.out.println("Площа кімнати = " + Area.Calculate(length, width) + " m^2");
+        // Виводимо площу кола
+        System.out.println("Площа кола = " + AreaCircle.calculate(radius) + " m^2");
     }
 }
