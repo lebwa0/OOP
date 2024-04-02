@@ -18,7 +18,7 @@ public class MainTest {
     }
 
     @Test
-public void testTextView() {
+    public void testTextView() {
     ViewFactory viewFactory = new MainViewFactory();
 
     CalculationData calculationData = viewFactory.getCalculationData();
@@ -26,6 +26,7 @@ public void testTextView() {
     calculationData.setResult(15);
 
     TextView textView = new TextView(calculationData);
+
 
     assertEquals("Result: 15", textView.display());
 }
