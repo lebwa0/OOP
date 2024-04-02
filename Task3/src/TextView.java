@@ -7,8 +7,13 @@ public class TextView implements View {
 
     @Override
     public void displayResults(CalculationDataCollection calculationDataCollection) {
+        // Виводимо результати
         System.out.println("Parameter1: " + calculationData.getParameter1());
         System.out.println("Parameter2: " + calculationData.getParameter2());
         System.out.println("Result: " + calculationData.getResult());
+    }
+
+    public String display() {
+        return "Result: " + (int) calculationData.getResult(); 
     }
 }

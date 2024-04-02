@@ -39,4 +39,4 @@
 
 Тестування програмного коду 
 
-![](Images/Task3.png)
+![](Images/task3.1.png)

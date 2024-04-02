@@ -8,7 +8,7 @@ public class ProblemSolver implements Serializable {
     }
 
     public void solve() {
-        double result = calculationData.getParameter1() * calculationData.getParameter2();
+        double result = calculationData.getParameter1() + calculationData.getParameter2();
         calculationData = new CalculationData(calculationData.getParameter1(), calculationData.getParameter2(), result);
     }
 

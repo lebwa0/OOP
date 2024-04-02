@@ -5,6 +5,10 @@ public class CalculationData implements Serializable {
     private double parameter2;
     private double result;
 
+    public void setResult(int result) {
+        this.result = result;
+    }
+
     public CalculationData(double parameter1, double parameter2, double result) {
         this.parameter1 = parameter1;
         this.parameter2 = parameter2;
@@ -21,5 +25,9 @@ public class CalculationData implements Serializable {
 
     public double getResult() {
         return result;
+    }
+
+    public void setParameter2(int i) {
+        throw new UnsupportedOperationException("Unimplemented method 'setParameter2'");
     }
 }

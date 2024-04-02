@@ -1,5 +1,4 @@
-public class ViewFactory {
-    public View createView(CalculationData calculationData) {
-        return new TextView(calculationData);
-    }
+public interface ViewFactory {
+    View createView(CalculationData calculationData);
+    CalculationData getCalculationData(); // Додайте цей метод
 }
