@@ -1,0 +1,6 @@
+public class MainTest {
+    @Test
+    public void testTextTablePresenter() {
+        // Ваш код для тестування класу TextTablePresenter
+    }
+}
