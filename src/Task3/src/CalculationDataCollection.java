@@ -34,4 +34,13 @@ public class CalculationDataCollection implements Serializable {
             return (CalculationDataCollection) inputStream.readObject();
         }
     }
+
+    public double getComputedResult() {
+        double sum = 0.0;
+        for (ProblemSolver solver : problemSolvers) {
+            sum += solver.getResult();
+        }
+        return sum;
+}
+
 }
