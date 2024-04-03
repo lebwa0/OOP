@@ -1,10 +1,12 @@
 package Task4.src;
-import java.io.Serializable;
 
+import Task4.src.CalculationDataCollection;
+import Task4.src.ResultPresenter;
 
 public class TextTablePresenter implements ResultPresenter {
+
     @Override
     public void presentResults(CalculationDataCollection data, String[] params) {
-        // Ваша реалізація для відображення текстової таблиці
+        // Implementation
     }
 }
