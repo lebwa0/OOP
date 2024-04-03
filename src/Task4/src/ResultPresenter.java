@@ -1,4 +1,4 @@
-package Task4.src;
+package src.Task4.src;
 
 public interface ResultPresenter {
 

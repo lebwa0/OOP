@@ -1,7 +1,7 @@
-package Task4.src;
+package src.Task4.src;
 
-import Task4.src.CalculationDataCollection;
-import Task4.src.ResultPresenter;
+import src.Task3.src.CalculationDataCollection;
+import src.Task3.src.ResultPresenter;
 
 public class TextTablePresenter implements ResultPresenter {
 

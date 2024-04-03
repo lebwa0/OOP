@@ -1,8 +1,6 @@
-package Task4.src;
+package src.Task4.src;
 
-import java.util.Scanner;
-
-public class UserInterface {
+public cerInterface {
 
     public static String[] getMenuSelection() {
         try (Scanner scanner = new Scanner(System.in)) {

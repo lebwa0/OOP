@@ -1,5 +1,4 @@
-package Task4.src;
-
+package src.Task4.src;
 import org.junit.Test;
 
 public class MainTest {

@@ -1,3 +1,5 @@
+package src.Task3.src;
+
 import java.io.*;
 
 public class Main {

@@ -1,3 +1,5 @@
+package src.Task3.src;
+
 public class MainViewFactory implements ViewFactory {
 
     @Override

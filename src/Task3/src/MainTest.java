@@ -1,3 +1,5 @@
+package src.Task3.src;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 

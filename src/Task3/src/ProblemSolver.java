@@ -1,3 +1,4 @@
+package src.Task3.src;
 import java.io.Serializable;
 
 public class ProblemSolver implements Serializable {
