@@ -13,8 +13,7 @@ public class MainTest {
         // Підготовка вхідних даних
         CalculationDataCollection data = new CalculationDataCollection();
         String[] params = {"param1", "param2", "param3"};
-
-        // Виклик методу для подання результатів у вигляді текстової таблиці
+        
         presenter.presentResults(data, params);
     }
 }
