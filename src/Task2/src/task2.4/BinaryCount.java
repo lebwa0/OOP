@@ -1,26 +1,26 @@
+import java.util.Scanner;
+
 public class BinaryCount {
-    public static void main(String[] args) {
-        int decimalNumber = 42; // Задане десяткове число
-
-        // Переводимо задане десяткове число у двійковий формат
-        String binaryNumber = Integer.toBinaryString(decimalNumber);
-
-        // Ініціалізуємо лічильники для 0 та 1
-        int countZeros = 0;
-        int countOnes = 0;
-
-        // Проходимо по кожному символу у двійковому представленні
-        for (int i = 0; i < binaryNumber.length(); i++) {
-            char digit = binaryNumber.charAt(i);
-            if (digit == '0') {
-                countZeros++;
-            } else if (digit == '1') {
-                countOnes++;
+    public static int countAlternatingBits(int n) {
+        String binary = Integer.toBinaryString(n);
+        int count = 0;
+        
+        // Перевірка чергування 0 та 1 в двійковому представленні
+        for (int i = 0; i < binary.length() - 1; i++) {
+            if (binary.charAt(i) != binary.charAt(i + 1)) {
+                count++;
             }
         }
-
-        // Виводимо результати
-        System.out.println("Кількість чергувань 0: " + countZeros);
-        System.out.println("Кількість чергувань 1: " + countOnes);
+        
+        return count;
+    }
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введіть десяткове число: ");
+        int decimalNumber = scanner.nextInt(); // Зчитуємо число з клавіатури
+        int alternatingBits = countAlternatingBits(decimalNumber);
+        System.out.println("Кількість чергувань 0 та 1 у двійковому представленні числа " + decimalNumber + " дорівнює: " + alternatingBits);
+        scanner.close(); 
     }
 }
