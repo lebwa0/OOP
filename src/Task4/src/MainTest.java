@@ -11,7 +11,10 @@ public class MainTest {
         int decimalNumber = 15; 
         String[] params = {String.valueOf(decimalNumber)}; // Конвертування числа в масив параметрів
 
-        // Виклик методу presentResults() для створення та відображення HTML-таблиці
+        // Виклик методу presentResults() для створення та відображення таблиці
         presenter.presentResults(data, params);
     }
 }
+
+
+
