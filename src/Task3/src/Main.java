@@ -1,26 +1,42 @@
 package src.Task3.src;
 
-import java.io.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Створення об'єкта ProblemSolver для демонстрації серіалізації/десеріалізації
-        ProblemSolver problemSolver = new ProblemSolver(10, 5);
-        problemSolver.solve();
+        Scanner scanner = new Scanner(System.in);
 
-        // Збереження об'єкта в файл
-        try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("problemSolver.ser"))) {
-            outputStream.writeObject(problemSolver);
-        } catch (IOException e) {
-            e.printStackTrace();
+        // Введення числа
+        System.out.print("Введіть десяткове число: ");
+        int decimalNumber = scanner.nextInt();
+
+        // Перетворення числа у двійкове представлення
+        String binaryString = Integer.toBinaryString(decimalNumber);
+
+        // Підрахунок кількості чергувань 0 та 1 у двійковому представленні числа
+        int alternatingZeroes = 0;
+        int alternatingOnes = 0;
+        char lastChar = '\0';
+
+        for (char c : binaryString.toCharArray()) {
+            if (c != lastChar) {
+                if (c == '0') {
+                    alternatingZeroes++;
+                } else {
+                    alternatingOnes++;
+                }
+                lastChar = c;
+            }
         }
 
-        // Відновлення об'єкта з файлу
-        try (ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("problemSolver.ser"))) {
-            ProblemSolver restoredProblemSolver = (ProblemSolver) inputStream.readObject();
-            System.out.println("Restored result: " + restoredProblemSolver.getResult());
-        } catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        // Виведення результатів
+        System.out.println("=== Результати обчислень ===");
+        System.out.println("Десяткове число: " + decimalNumber);
+        System.out.println("Двійкове представлення: " + binaryString);
+        System.out.println("Кількість чергувань 0: " + alternatingZeroes);
+        System.out.println("Кількість чергувань 1: " + alternatingOnes);
+        System.out.println("=== Кінець результатів ===");
+
+        scanner.close();
     }
 }

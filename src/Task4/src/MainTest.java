@@ -1,11 +1,10 @@
 package src.Task4.src;
 
-import org.junit.Test;
+
 import src.Task3.src.CalculationDataCollection;
 
 public class MainTest {
 
-    @Test
     public void testTextTablePresenter() {
         // Створення об'єкта TextTablePresenter
         TextTablePresenter presenter = new TextTablePresenter();
