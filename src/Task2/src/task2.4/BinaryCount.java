@@ -29,3 +29,6 @@ public class BinaryCount {
         scanner.close(); // Закриваємо Scanner
     }
 }
+
+
+
