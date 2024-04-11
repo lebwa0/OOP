@@ -1,5 +1,13 @@
 package src.Task3.src;
-public interface ViewFactory {
-    View createView(CalculationData calculationData);
-    CalculationData getCalculationData(); // Додайте цей метод
+
+public class ViewFactory {
+
+    public View createView(String viewType) {
+        switch (viewType) {
+            case "TextView":
+                return new TextView();
+            default:
+                throw new IllegalArgumentException("Invalid view type: " + viewType);
+        }
+    }
 }
