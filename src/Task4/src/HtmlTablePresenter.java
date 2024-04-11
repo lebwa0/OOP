@@ -2,10 +2,11 @@ package src.Task4.src;
 
 public class HtmlTablePresenter implements ResultPresenter {
     @Override
-    public void presentResults(src.Task4.src.CalculationDataCollection data, String[] params) {
+    public void presentResults(CalculationDataCollection data, String[] params) {
         int decimalNumber = Integer.parseInt(params[0]); // Отримуємо задане десяткове число
         String binaryString = Integer.toBinaryString(decimalNumber); // Перетворюємо його у двійкове представлення
 
+        
         // Підрахунок кількості чергувань 0 та 1
         int alternatingZeroes = 0;
         int alternatingOnes = 0;
@@ -34,5 +35,4 @@ public class HtmlTablePresenter implements ResultPresenter {
 
     }
 }
-
 

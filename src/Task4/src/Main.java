@@ -4,9 +4,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Створення об'єкту CalculationDataCollection
-        CalculationDataCollection data = new CalculationDataCollection(0);
-        // Додавання даних до CalculationDataCollection, якщо необхідно
+         // Створення об'єкту CalculationDataCollection
+         CalculationDataCollection data = new CalculationDataCollection(0);
+        
+         // Створення об'єкту CustomHtmlTablePresenter і виклик методу presentResults
+         CustomHtmlTablePresenter customPresenter = new CustomHtmlTablePresenter();
+         customPresenter.presentResults(data, new String[] {"15"});
 
         // Зчитування десяткового числа з консолі
         Scanner scanner = new Scanner(System.in);
